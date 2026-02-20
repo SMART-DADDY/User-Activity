@@ -1,0 +1,22 @@
+{
+    "name": "smart-daddy/user-activity",
+    "description": "User activity tracking module for SMART-TiLL",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmartDaddy\\UserActivity\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmartDaddy\\UserActivity\\UserActivityServiceProvider"
+            ]
+        }
+    }
+}
